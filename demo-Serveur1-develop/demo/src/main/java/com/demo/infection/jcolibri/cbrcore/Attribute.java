@@ -8,9 +8,11 @@
  */
 package com.demo.infection.jcolibri.cbrcore;
 
+import com.demo.infection.jcolibri.exception.AttributeAccessException;
+
 import java.lang.reflect.Field;
 
-import com.demo.infection.jcolibri.exception.AttributeAccessException;
+//import com.demo.infection.jcolibri.exception.AttributeAccessException;
 
 /**
  * This class identifies an attribute of a CaseComponent (Java Bean).

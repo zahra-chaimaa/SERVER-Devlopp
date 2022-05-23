@@ -2,13 +2,12 @@ package com.demo.infection.model;
 
 
 
+
 import com.demo.infection.jcolibri.casebase.LinealCaseBase;
 import com.demo.infection.jcolibri.cbraplications.StandardCBRApplication;
 import com.demo.infection.jcolibri.cbrcore.*;
 import com.demo.infection.jcolibri.connector.DataBaseConnector;
 import com.demo.infection.jcolibri.exception.ExecutionException;
-
-
 import com.demo.infection.jcolibri.method.retrieve.NNretrieval.NNConfig;
 import com.demo.infection.jcolibri.method.retrieve.NNretrieval.NNScoringMethod;
 import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
@@ -18,7 +17,7 @@ import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local.
 import com.demo.infection.jcolibri.method.retrieve.RetrievalResult;
 import com.demo.infection.jcolibri.method.retrieve.selection.SelectCases;
 import com.demo.infection.jcolibri.util.FileIO;
-import org.springframework.stereotype.Component;
+
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -91,7 +90,7 @@ import java.util.Collection;
 
            attribute = new Attribute("aus", CaseDescription.class);
            config.addMapping(attribute, new Equal());
-           //config.setWeight(attribute,0.1);
+           config.setWeight(attribute,0.1);
            //JOptionPane.showConfirmDialog(null, "DEBUT14");
            attribute = new Attribute("des", CaseDescription.class);
            config.addMapping(attribute, new Equal());

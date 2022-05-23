@@ -57,7 +57,7 @@ public class main {
         query.setDescription((CaseComponent) queryDesc);
 
         test.cycle(query,2);
-
+System.out.println("cycle marche");
 
 
             //	System.out.println("Cycle finished. Type exit to idem");

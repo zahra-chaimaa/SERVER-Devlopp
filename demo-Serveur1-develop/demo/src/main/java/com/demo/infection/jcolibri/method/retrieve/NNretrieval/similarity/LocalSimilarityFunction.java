@@ -9,7 +9,9 @@
 package com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity;
 
 
-//import com.demo.infection.jcolibri.exception.NoApplicableSimilarityFunctionException;
+
+
+
 
 import com.demo.infection.jcolibri.exception.NoApplicableSimilarityFunctionException;
 

@@ -3,8 +3,6 @@ package com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local
 
 
 
-
-
 import com.demo.infection.jcolibri.exception.NoApplicableSimilarityFunctionException;
 import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
 

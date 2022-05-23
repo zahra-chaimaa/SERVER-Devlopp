@@ -8,7 +8,16 @@
  */
 package com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity;
 
+
+
+
+
+//import com.demo.infection.jcolibri.cbrcore.CBRCase;
+//import com.demo.infection.jcolibri.cbrcore.CBRQuery;
+//import com.demo.infection.jcolibri.cbrcore.CaseComponent;
 //import com.demo.infection.jcolibri.method.retrieve.NNretrieval.NNConfig;
+
+
 import com.demo.infection.jcolibri.cbrcore.CBRCase;
 import com.demo.infection.jcolibri.cbrcore.CBRQuery;
 import com.demo.infection.jcolibri.cbrcore.CaseComponent;
