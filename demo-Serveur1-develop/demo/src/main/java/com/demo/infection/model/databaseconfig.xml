@@ -1,7 +1,7 @@
 <DataBaseConfiguration>
-	<HibernateConfigFile>C:/demo-Serveur1-Develop/demo-Serveur1-develop/demo/src/main/java/com/demo/infection/model/hibernate.cfg.xml</HibernateConfigFile>
-	<DescriptionMappingFile>C:/demo-Serveur1-Develop/demo-Serveur1-develop/demo/src/main/java/com/demo/infection/model/caseDescription.hbm.xml</DescriptionMappingFile>
-	<DescriptionClassName>C:/demo-Serveur1-Develop/demo-Serveur1-develop/demo/src/main/java/com/demo/infection/model/caseDescription</DescriptionClassName>
-	<SolutionClassName>C:/demo-Serveur1-Develop/demo-Serveur1-develop/demo/src/main/java/com/demo/infection/model/casesSolution</SolutionClassName>
-	<SolutionMappingFile>C:/demo-Serveur1-Develop/demo-Serveur1-develop/demo/src/main/java/com/demo/infection/model/caseSolution.hbm.xml</SolutionMappingFile>
+	<HibernateConfigFile>C:/demo-Serveur1-Devlop/demo-Serveur1-develop/demo/src/main/java/com/demo/infection/model/hibernate.cfg.xml</HibernateConfigFile>
+	<DescriptionMappingFile>C:/demo-Serveur1-Devlop/demo-Serveur1-develop/demo/src/main/java/com/demo/infection/model/caseDescription.hbm.xml</DescriptionMappingFile>
+	<DescriptionClassName>C:/demo-Serveur1-Devlop/demo-Serveur1-develop/demo/src/main/java/com/demo/infection/model/caseDescription</DescriptionClassName>
+	<SolutionClassName>C:/demo-Serveur1-Devlop/demo-Serveur1-develop/demo/src/main/java/com/demo/infection/model/casesSolution</SolutionClassName>
+	<SolutionMappingFile>C:/demo-Serveur1-Devlop/demo-Serveur1-develop/demo/src/main/java/com/demo/infection/model/caseSolution.hbm.xml</SolutionMappingFile>
 </DataBaseConfiguration>

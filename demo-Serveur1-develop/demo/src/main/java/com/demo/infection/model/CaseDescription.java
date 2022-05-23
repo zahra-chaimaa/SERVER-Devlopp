@@ -1,12 +1,9 @@
 package com.demo.infection.model;
 
-//import es.ucm.fdi.gaia.jcolibri.cbrcore.CaseComponent;
+
 import com.demo.infection.jcolibri.cbrcore.CaseComponent;
 import com.demo.infection.jcolibri.cbrcore.Attribute;
 
-//import es.ucm.fdi.gaia.jcolibri.method.gui.editors.StringEditor;
-//import es.ucm.fdi.gaia.jcolibri.method.retrieve.RetrievalResult;
-//import es.ucm.fdi.gaia.jcolibri.connector.TypeAdaptor;
 public class CaseDescription implements CaseComponent {
 
     int id;
