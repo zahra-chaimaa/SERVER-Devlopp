@@ -17,8 +17,10 @@ import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local.
 import com.demo.infection.jcolibri.method.retrieve.RetrievalResult;
 import com.demo.infection.jcolibri.method.retrieve.selection.SelectCases;
 import com.demo.infection.jcolibri.util.FileIO;
+import com.demo.infection.repository.myCaseBaseRepo;
 
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -28,7 +30,7 @@ import java.util.Collection;
    public class test1 implements StandardCBRApplication {
 
 
-       Connector _connector;
+     public  Connector _connector;
        CBRCaseBase _caseBase;
        ArrayList<RetrievalResult> cases;
        public Collection<CBRCase> casestoreturn;
@@ -43,8 +45,9 @@ import java.util.Collection;
 
                _connector = new DataBaseConnector();
 //            // Init the ddbb connector with the config file
-//           _connector.initFromXMLfile(jcolibri.util.FileIO.findFile("main/java/com/ouss/reanimation/model/databaseconfig.xml"));
-               _connector.initFromXMLfile(FileIO.findFile("C:/demo-Serveur1-Devlop/demo-Serveur1-develop/demo/src/main/java/com/demo/infection/model/databaseconfig.xml"));
+              _connector.initFromXMLfile(FileIO.findFile("main/java/com/demo/infection/model/databaseconfig.xml"));
+              // _connector.initFromXMLfile(FileIO.findFile("src/main/java/com/demo/infection/model/databaseconfig.xml"));
+
                // Create a Lineal case base for in-memory organization
                _caseBase = (CBRCaseBase) new LinealCaseBase();
            } catch (Exception e) {
@@ -55,8 +58,10 @@ import java.util.Collection;
 
        public CBRCaseBase preCycle() throws ExecutionException {
 
-           _caseBase.init(_connector);
+           //_caseBase.init(_connector);
+           myCaseBaseRepo myrepo = new myCaseBaseRepo();
 
+            _caseBase.learnCases(myrepo.colelctionCase());
           java.util.Collection<CBRCase> cases = _caseBase.getCases();
            for (CBRCase c : _caseBase.getCases()) {
                System.out.println(c);
@@ -173,6 +178,10 @@ import java.util.Collection;
            System.out.println(eval);
            evaltogather = eval;
            Collection<CBRCase> selectedcases = SelectCases.selectTopK(evaltogather,k);
+           System.out.println("retrieve cases");
+           for(RetrievalResult nse: eval)
+             System.out.println(nse);
+
 
 
        }

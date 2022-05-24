@@ -78,7 +78,7 @@ public class DataBaseConnector implements Connector {
 	        //factory.setValidating(true);   
 	        //factory.setNamespaceAware(true);
 	        DocumentBuilder builder = factory.newDocumentBuilder();
-	        Document document = builder.parse( file.openStream() );
+	        Document document = builder.parse(file.openStream() );
 	        
 	        String hcf = document.getElementsByTagName("HibernateConfigFile").item(0).getTextContent();
 	        

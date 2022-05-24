@@ -99,5 +99,8 @@
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.hsqldb:hsqldb:2.5.2" level="project" />
+    <orderEntry type="library" name="HIBERNATE" level="application" />
+    <orderEntry type="library" name="HIBERNATE 5.0" level="application" />
+    <orderEntry type="library" name="HIBERNATE 5.2" level="application" />
   </component>
 </module>
